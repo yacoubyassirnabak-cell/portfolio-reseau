@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TP 1-2 - Réseaux</title>
+<title>TP 1-2 - mpls</title>
 </head>
 <body>
 <h1>TP 1-2</h1>
@@ -16,16 +16,8 @@
 <li>Configurer les équipements.</li>
 <li>Vérifier la connectivité.</li>
 </ul>
-<h2>Topologie réseau</h2>
-<p>Ajouter ici la capture GNS3.</p>
-<h2>Configurations</h2>
-<p>Ajouter les configurations des équipements.</p>
-<h2>Tests et résultats</h2>
-<p>Ajouter les résultats des tests.</p>
+
 <h2>Vidéo de simulation</h2>
-<a href="#">Regarder la vidéo sur Google Drive</a>
-<h2>Documents</h2>
-<p>Ajouter le PDF du TP.</p>
-<a href="../../index.html">Retour à l'accueil</a>
+<a href="https://drive.google.com/file/d/1QlayoH6SdgR1K0tz9iesbzh_Aj_nlphA/view?usp=sharing">Regarder la vidéo sur Google Drive</a>
 </body>
 </html>
