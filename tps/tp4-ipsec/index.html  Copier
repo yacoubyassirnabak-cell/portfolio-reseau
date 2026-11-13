@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TP4 - VPN IPsec</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #f4f6f9;
+  color: #222;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+h1, h2 { color: #174b80; }
+section {
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid #2878bd;
+  background: #f5f8fc;
+}
+a { color: #1266b2; }
+</style>
+</head>
+<body>
+<main>
+<h1>TP4 - VPN IPsec</h1>
+<p><strong>Thème :</strong> Sécurisation des communications réseau avec VPN IPsec.</p>
+
+<section>
+<h2>1. Présentation du TP</h2>
+<p>Ce TP porte sur la mise en place d'un VPN IPsec afin de sécuriser les échanges de données entre deux réseaux distants.</p>
+</section>
+
+<section>
+<h2>2. Objectifs</h2>
+<ul>
+<li>Comprendre le fonctionnement d'un VPN IPsec.</li>
+<li>Étudier la topologie réseau.</li>
+<li>Configurer les équipements VPN.</li>
+<li>Mettre en place les paramètres de sécurité IPsec.</li>
+<li>Vérifier le fonctionnement du tunnel.</li>
+</ul>
+</section>
+
+<section>
+<h2>3. Topologie réseau</h2>
+<p>Ajouter ici la capture de la topologie réalisée sur GNS3.</p>
+</section>
+
+<section>
+<h2>4. Plan d'adressage IP</h2>
+<p>Présenter les adresses IP utilisées pour les routeurs et les réseaux locaux.</p>
+</section>
+
+<section>
+<h2>5. Configurations</h2>
+<p>Ajouter les configurations des routeurs et les paramètres VPN IPsec.</p>
+<p><a href="configurations/">Consulter les configurations</a></p>
+</section>
+
+<section>
+<h2>6. Captures d'écran</h2>
+<p>Ajouter les captures de la configuration et des vérifications.</p>
+<p><a href="captures/">Voir les captures</a></p>
+</section>
+
+<section>
+<h2>7. Tests et vérifications</h2>
+<ul>
+<li>Vérification de la connectivité entre les réseaux.</li>
+<li>Vérification de l'état du tunnel VPN.</li>
+<li>Vérification des associations de sécurité IPsec.</li>
+<li>Validation des échanges de données.</li>
+</ul>
+</section>
+
+<section>
+<h2>8. Vidéo de simulation</h2>
+<p><a href="https://drive.google.com/file/d/1g0EMhz4YNcbQttTW2MPVfPivdChl66Z-/view?usp=sharing">Regarder la simulation VPN IPsec</a></p>
+</section>
+
+</body>
+</html>
