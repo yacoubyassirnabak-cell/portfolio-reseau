@@ -2,29 +2,327 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio Réseaux Informatiques</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Réseaux Informatiques</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111c3a, #172554, #312e81);
+            padding: 75px 20px;
+            text-align: center;
+            border-bottom: 3px solid #38bdf8;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 18px;
+            border: 1px solid #38bdf8;
+            border-radius: 30px;
+            color: #7dd3fc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #38bdf8;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #94a3b8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            margin-bottom: 55px;
+        }
+
+        .stat {
+            background: #151f35;
+            padding: 22px;
+            text-align: center;
+            border: 1px solid #263650;
+            border-radius: 14px;
+        }
+
+        .stat h3 {
+            font-size: 30px;
+            color: #38bdf8;
+        }
+
+        .stat p {
+            color: #aab8cc;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #172238, #111a2c);
+            border: 1px solid #293b58;
+            border-radius: 16px;
+            padding: 25px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+            box-shadow: 0 12px 30px rgba(14, 165, 233, 0.12);
+        }
+
+        .number {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aab8cc;
+            font-size: 14px;
+            margin-bottom: 22px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background: #0284c7;
+            color: white;
+            padding: 11px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background: #38bdf8;
+            color: #07111f;
+        }
+
+        .about {
+            margin-top: 65px;
+            padding: 30px;
+            background: #151f35;
+            border-left: 4px solid #38bdf8;
+            border-radius: 12px;
+        }
+
+        .about h2 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .about p {
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background: #080d18;
+            color: #94a3b8;
+            border-top: 1px solid #263650;
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #38bdf8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            header {
+                padding: 55px 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Portfolio Réseaux Informatiques</h1>
-  <p>Bienvenue dans mon portfolio de travaux pratiques réseau.</p>
 
-  <h2>Mes travaux pratiques</h2>
-  <ul>
-    <li><a href="tps/tp1-1/">TP 1-1</a></li>
-    <li><a href="tps/tp1-2/">TP 1-2</a></li>
-    <li><a href="tps/lab_bgp/">Lab BGP</a></li>
-    <li><a href="tps/lab-redistribution/">Lab Redistribution</a></li>
-    <li><a href="tps/tp2-mpls/">TP MPLS</a></li>
-    <li><a href="tps/tp3-nat-pat-dhcp/">TP NAT, PAT et DHCP</a></li>
-    <li><a href="tps/tp4-gre/">TP GRE</a></li>
-    <li><a href="tps/tp5-fr-basic/">TP Frame Relay Basic</a></li>
-    <li><a href="tps/tp5-fr-advanced/">TP Frame Relay Advanced</a></li>
-  </ul>
+<header>
+    <div class="tag">PORTFOLIO ACADÉMIQUE</div>
+    <h1>Réseaux Informatiques</h1>
+    <p>
+        Bienvenue dans mon portfolio !
+        Découvrez mes travaux pratiques, mes configurations réseau,
+        mes topologies et les tests réalisés.
+    </p>
+</header>
 
-  <footer>
-    <p>Portfolio réalisé dans le cadre des travaux pratiques de réseaux.</p>
-  </footer>
+<main class="container">
+
+    <section class="stats">
+        <div class="stat">
+            <h3>10</h3>
+            <p>Travaux pratiques</p>
+        </div>
+
+        <div class="stat">
+            <h3>Réseaux</h3>
+            <p>Administration et configuration</p>
+        </div>
+
+        <div class="stat">
+            <h3>Labs</h3>
+            <p>Simulation et expérimentation</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">
+            <h2>Mes travaux pratiques</h2>
+            <p>Explorez les différents projets réalisés en réseaux informatiques.</p>
+        </div>
+
+        <div class="projects">
+
+            <div class="card">
+                <div class="number">TP 01</div>
+                <h3>TP 1-1</h3>
+                <p>Premiers travaux pratiques de configuration et de mise en réseau.</p>
+                <a href="tps/tp1-1/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 02</div>
+                <h3>TP 1-2</h3>
+                <p>Configuration et expérimentation des équipements réseau.</p>
+                <a href="tps/tp1-2/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 03</div>
+                <h3>Lab BGP</h3>
+                <p>Routage dynamique et configuration du protocole BGP.</p>
+                <a href="tps/lab_bgp/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 04</div>
+                <h3>Lab Redistribution</h3>
+                <p>Redistribution des routes entre différents protocoles de routage.</p>
+                <a href="tps/lab-redistribution/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 05</div>
+                <h3>Réseau MPLS</h3>
+                <p>Configuration MPLS et mise en place d'une architecture VPN.</p>
+                <a href="tps/tp2-mpls/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 06</div>
+                <h3>NAT, PAT et DHCP</h3>
+                <p>Traduction d'adresses IP et attribution automatique des paramètres réseau.</p>
+                <a href="tps/tp3-nat-pat-dhcp/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 07</div>
+                <h3>Tunnel VPN GRE</h3>
+                <p>Création et configuration de tunnels GRE entre routeurs.</p>
+                <a href="tps/tp4-gre/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 08</div>
+                <h3>VPN IPsec</h3>
+                <p>Mise en place d'une communication sécurisée avec IPsec.</p>
+                <a href="tps/tp4-ipsec/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 09</div>
+                <h3>Frame Relay Basic</h3>
+                <p>Configuration de base d'un réseau Frame Relay.</p>
+                <a href="tps/tp5-fr-basic/">Voir le TP →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">TP 10</div>
+                <h3>Frame Relay Advanced</h3>
+                <p>Configuration avancée et tests d'un réseau Frame Relay.</p>
+                <a href="tps/tp5-fr-advanced/">Voir le TP →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>À propos de ce portfolio</h2>
+        <p>
+            Ce portfolio présente mes travaux pratiques dans le domaine
+            des réseaux informatiques. Il regroupe les configurations,
+            les topologies, les commandes de vérification et les résultats
+            des tests effectués au cours des différentes séances.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Portfolio Réseaux Informatiques | Réalisé avec <span>HTML & CSS</span></p>
+</footer>
+
 </body>
 </html>
